@@ -1,3 +1,41 @@
+@font-face {
+    font-family: 'Cera Pro';
+    font-style: normal;
+    src: url('../fonts/ceraPro/CeraPro-Regular.woff2') format('woff2'),
+         url('../fonts/ceraPro/CeraPro-Regular.woff') format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    font-style: normal;
+    src: url('../fonts/ceraPro/CeraPro-Medium.woff2') format('woff2'),
+         url('../fonts/ceraPro/CeraPro-Medium.woff') format('woff');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    font-style: normal;
+    src: url('../fonts/ceraPro/CeraPro-Bold.woff2') format('woff2'),
+         url('../fonts/ceraPro/CeraPro-Bold.woff') format('woff');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    font-style: normal;
+    src: url('../fonts/ceraPro/CeraPro-Black.woff2') format('woff2'),
+         url('../fonts/ceraPro/CeraPro-Black.woff') format('woff');
+    font-weight: 900;
+}
+
+:root {
+    --main-black-color: #3d3d3d;
+    --secondary-green-color: #46a358;
+    --secondary-grey-color: #727272;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,18 +44,19 @@
 
 a {
     cursor: pointer;
+    text-decoration: none;
 }
 
 body {
     font-family: 'Cera Pro', sans-serif;
     font-weight: 400;
-    color: #3d3d3d;
+    color: var(--main-black-color);
 }
 
 .registration__popup {
     max-width: 500px;
     margin: 30px auto;
-    border: 1px solid #3d3d3d;
+    border: 1px solid var(--main-black-color);
     border-radius: 5px;
     padding: 52px 100px 50px;
 }
@@ -37,12 +76,12 @@ body {
 }
 
 .registration__type_active {
-    color: #46a358;
+    color: var(--secondary-green-color);
 }
 
 .registration__title span::before {
     content: '';
-    border-left: 2px solid #3d3d3d;
+    border-left: 2px solid var(--main-black-color);
     height: 16px;
     padding-left: 10px;
     margin-left: 10px;
@@ -88,7 +127,7 @@ body {
 
 .registration__btn {
     color: #ffff;
-    background-color: #46A358;
+    background-color: var(--secondary-green-color);
     font-weight: 700;
     font-size: 17px;
     width: 100%;
@@ -126,7 +165,7 @@ body {
     font-size: 13px;
     line-height: 1.2;
     font-weight: 500;
-    color: #727272;
+    color: var(--secondary-grey-color);
     border: 1px solid #eaeaea;
     border-radius: 5px;
     margin-bottom: 15px;
@@ -140,4 +179,133 @@ body {
 .registration__link:last-of-type img {
     display: block;
     margin-right: 4px;
+}
+
+
+/*================ index.html ==================*/
+
+.header {
+    margin-top: 30px;
+    padding-bottom: 18px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(70, 163, 88, 0.5);
+    padding-bottom: 18px;
+}
+
+.navigation__list {
+    display: flex;
+    gap: 50px;
+    align-items: start;
+}
+
+.navigation__list__item {
+    position: relative;
+}
+
+.navigation__list__item::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    background-color: var(--secondary-green-color);
+    height: 3px;
+    transition: 0.4s;
+    margin-top: 25px;
+}
+
+.navigation__list__item:hover .navigation__list__link {
+    font-weight: 700;
+}
+
+.navigation__list__item:hover::after {
+    width: 100%;
+}
+
+.navigation__list__link {
+    color: var(--main-black-color);
+}
+
+.login__btn {
+    border-radius: 6px;
+    background: var(--secondary-green-color);
+    padding: 7px 17px;
+    color: #fff;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.login__btn::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 4px;
+    background-image: url("../images/logout.svg");
+}
+
+
+/* ========== Main Banner ==============*/
+
+.main__banner .container {
+
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(135deg,
+    rgba(245, 245, 245, 0.5) 0%,
+    rgba(245, 245, 245, 0.5) 100%);
+}
+
+.banner__info {
+    padding: 68px 0 85px 43px;
+}
+
+.banner__subtitle {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--main-black-color);
+    margin-bottom: 7px;
+}
+
+.banner__title {
+    font-weight: 900;
+    line-height: 1;
+    font-size: 70px;
+    text-transform: uppercase;
+    color: var(--main-black-color);
+    margin-bottom: 5px;
+}
+
+.banner__highlight {
+    font-weight: 900;
+    color: var(--secondary-green-color);
+}
+
+.banner__description {
+    font-weight: 400;
+    line-height: 1.7;
+    font-size: 14px;
+    color: var(--secondary-grey-color);
+    margin-bottom: 44px;
+}
+
+.banner__btn {
+    display: inline-block;
+    border-radius: 6px;
+    padding: 11px 27px;
+    background: var(--secondary-green-color);
+    color: #ffffff;
 }
