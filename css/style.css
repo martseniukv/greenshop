@@ -171,6 +171,10 @@ body {
     margin-bottom: 15px;
 }
 
+.registration__link:last-child{
+    padding: 10px 60px;
+}
+
 .registration__link img {
     display: block;
     margin-right: 9px;
