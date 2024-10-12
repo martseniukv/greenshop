@@ -270,6 +270,7 @@ body {
 }
 
 .banner__info {
+    max-width: 600px;
     padding: 68px 0 85px 43px;
 }
 
