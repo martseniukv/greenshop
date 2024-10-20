@@ -637,25 +637,19 @@ body {
     font-weight: 500;
     line-height: 1.14;
     color: var(--main-black-color);
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 3px;
 }
 
 .blog-card__link:after {
     content: "";
-    display: inline-block;
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
     background-image: url("../images/arrow_right_grey.svg");
 }
 
 .blog-card__link:hover:after {
-    content: "";
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    fill: #46a358;
     background-image: url("../images/arrow_right_green.svg");
 }
 
