@@ -500,7 +500,7 @@ body {
     width: 18px;
     height: 18px;
     display: inline-block;
-    background-image: url("/images/pagination_arrow_right.svg");
+    background-image: url("../images/pagination_arrow_right.svg");
 }
 
 .pagination__item:hover:last-child::before{
@@ -508,7 +508,7 @@ body {
     width: 18px;
     height: 18px;
     display: inline-block;
-    background-image: url("/images/pagination_arrow_right_white.svg");
+    background-image: url("../images/pagination_arrow_right_white.svg");
 }
 
 /* ============= Promo section ============== */
@@ -570,7 +570,7 @@ body {
     content: "";
     width: 18px;
     height: 18px;
-    background-image: url("/images/button_arrow_right.svg");
+    background-image: url("../images/button_arrow_right.svg");
 }
 
 /* ============= Blog section ============== */
@@ -647,7 +647,7 @@ body {
     display: inline-block;
     width: 18px;
     height: 18px;
-    background-image: url("/images/arrow_right_grey.svg");
+    background-image: url("../images/arrow_right_grey.svg");
 }
 
 .blog-card__link:hover:after {
@@ -656,7 +656,7 @@ body {
     width: 18px;
     height: 18px;
     fill: #46a358;
-    background-image: url("/images/arrow_right_green.svg");
+    background-image: url("../images/arrow_right_green.svg");
 }
 
 .blog-card__link:hover {
