@@ -2,7 +2,7 @@
     font-family: 'Cera Pro';
     font-style: normal;
     src: url('../fonts/ceraPro/CeraPro-Light.woff2') format('woff2'),
-         url('../fonts/ceraPro/CeraPro-Light.woff') format('woff');
+    url('../fonts/ceraPro/CeraPro-Light.woff') format('woff');
     font-weight: 300;
 }
 
@@ -10,7 +10,7 @@
     font-family: 'Cera Pro';
     font-style: normal;
     src: url('../fonts/ceraPro/CeraPro-Regular.woff2') format('woff2'),
-         url('../fonts/ceraPro/CeraPro-Regular.woff') format('woff');
+    url('../fonts/ceraPro/CeraPro-Regular.woff') format('woff');
     font-weight: 400;
 }
 
@@ -18,7 +18,7 @@
     font-family: 'Cera Pro';
     font-style: normal;
     src: url('../fonts/ceraPro/CeraPro-Medium.woff2') format('woff2'),
-         url('../fonts/ceraPro/CeraPro-Medium.woff') format('woff');
+    url('../fonts/ceraPro/CeraPro-Medium.woff') format('woff');
     font-weight: 500;
 }
 
@@ -26,7 +26,7 @@
     font-family: 'Cera Pro';
     font-style: normal;
     src: url('../fonts/ceraPro/CeraPro-Bold.woff2') format('woff2'),
-         url('../fonts/ceraPro/CeraPro-Bold.woff') format('woff');
+    url('../fonts/ceraPro/CeraPro-Bold.woff') format('woff');
     font-weight: 700;
 }
 
@@ -34,8 +34,32 @@
     font-family: 'Cera Pro';
     font-style: normal;
     src: url('../fonts/ceraPro/CeraPro-Black.woff2') format('woff2'),
-         url('../fonts/ceraPro/CeraPro-Black.woff') format('woff');
+    url('../fonts/ceraPro/CeraPro-Black.woff') format('woff');
     font-weight: 900;
+}
+
+@font-face {
+    font-family: 'encode_sans_expandedregular';
+    src: url('../fonts/encodeSansExpanded/regular/encodesansexpanded-regular-webfont.eot');
+    src: url('../fonts/encodeSansExpanded/regular/encodesansexpanded-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/encodeSansExpanded/regular/encodesansexpanded-regular-webfont.woff2') format('woff2'),
+    url('../fonts/encodeSansExpanded/regular/encodesansexpanded-regular-webfont.woff') format('woff'),
+    url('../fonts/encodeSansExpanded/regular/encodesansexpanded-regular-webfont.ttf') format('truetype'),
+    url('../fonts/encodeSansExpanded/regular/encodesansexpanded-regular-webfont.svg#encode_sans_expandedregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'encode_sans_expandedbold';
+    src: url('../fonts/encodeSansExpanded/bold/encodesansexpanded-bold-webfont.eot');
+    src: url('../fonts/encodeSansExpanded/bold/encodesansexpanded-bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/encodeSansExpanded/bold/encodesansexpanded-bold-webfont.woff2') format('woff2'),
+    url('../fonts/encodeSansExpanded/bold/encodesansexpanded-bold-webfont.woff') format('woff'),
+    url('../fonts/encodeSansExpanded/bold/encodesansexpanded-bold-webfont.ttf') format('truetype'),
+    url('../fonts/encodeSansExpanded/bold/encodesansexpanded-bold-webfont.svg#encode_sans_expandedbold') format('svg');
+    font-weight: 700;
+    font-style: normal;
 }
 
 :root {
@@ -221,8 +245,26 @@ body {
     align-items: start;
 }
 
-.navigation__list__item {
+.navigation__list .navigation__list__item {
     position: relative;
+}
+
+.navigation__list ul {
+    top: 100%;
+    left: -55px;
+    display: none;
+    padding-top: 45px;
+    position: absolute;
+}
+
+.navigation__list ul ul {
+    top: 0;
+    left: 100%;
+    padding-left: 2px;
+}
+
+.navigation__list li:hover > ul {
+    display: block;
 }
 
 .navigation__list__item::after {
@@ -238,6 +280,45 @@ body {
 
 .navigation__list__item:hover::after {
     width: 100%;
+}
+
+.dropdown__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 17px 8px 14px;
+    min-width: 188px;
+    background-color: #EDF6EE;
+}
+
+.dropdown__item:hover {
+    background: #1a712a;
+}
+
+.dropdown__item:hover > .dropdown__link {
+    font-weight: 700;
+    color: var(--white-color);
+}
+
+.dropdown__item:has(.dropdown)::after {
+    content: "";
+    width: 7px;
+    height: 10px;
+    display: block;
+    background-image: url("../images/arrow_left_grey.svg");
+}
+
+.dropdown__item:hover:has(.dropdown)::after {
+    content: "";
+    width: 7px;
+    height: 10px;
+    display: block;
+    background-image: url("../images/arrow_left_white.svg");
+}
+
+.dropdown__link {
+    font: 400 16px "Encode Sans Expanded", sans-serif;
+    color: #3d3d3d;
 }
 
 .navigation__list__link {
