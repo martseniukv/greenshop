@@ -283,10 +283,6 @@ body {
 }
 
 .dropdown__item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px 17px 8px 14px;
     min-width: 188px;
     background-color: #EDF6EE;
 }
@@ -300,7 +296,7 @@ body {
     color: var(--white-color);
 }
 
-.dropdown__item:has(.dropdown)::after {
+.dropdown__item:has(.dropdown) > .dropdown__link::after {
     content: "";
     width: 7px;
     height: 10px;
@@ -308,7 +304,7 @@ body {
     background-image: url("../images/arrow_left_grey.svg");
 }
 
-.dropdown__item:hover:has(.dropdown)::after {
+.dropdown__item:hover:has(.dropdown) > .dropdown__link::after {
     content: "";
     width: 7px;
     height: 10px;
@@ -319,6 +315,10 @@ body {
 .dropdown__link {
     font: 400 16px "Encode Sans Expanded", sans-serif;
     color: #3d3d3d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 17px 8px 14px;
 }
 
 .navigation__list__link {
