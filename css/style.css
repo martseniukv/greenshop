@@ -229,8 +229,10 @@ body {
     padding: 10px 60px;
 }
 
-.registration__link img {
+.registration__link svg {
     display: block;
+    width: 20px;
+    height: 20px;
     margin-right: 9px;
 }
 
@@ -305,10 +307,18 @@ body {
 .dropdown__item {
     min-width: 188px;
     background-color: #EDF6EE;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .dropdown__item:hover {
     background: #1a712a;
+}
+
+.dropdown__item:hover .dropdown_img {
+    transform: rotateY(180deg);
+    fill: var(--white-color);
 }
 
 .dropdown__item:hover > .dropdown__link {
@@ -316,22 +326,10 @@ body {
     color: var(--white-color);
 }
 
-.dropdown__item:has(.dropdown) > .dropdown__link::after {
-    content: "";
+.dropdown_img {
     width: 7px;
     height: 10px;
-    display: block;
-    /*background-image: url("../images/arrow_left_grey.svg");*/
-    background-image: url("../images/arrow-sprite.svg#arrow-left-grey");
-}
-
-.dropdown__item:hover:has(.dropdown) > .dropdown__link::after {
-    content: "";
-    width: 7px;
-    height: 10px;
-    display: block;
-    /*background-image: url("../images/arrow_left_white.svg");*/
-    background-image: url("../images/arrow-sprite.svg#arrow-left-white");
+    margin-right: 17px;
 }
 
 .dropdown__link {
@@ -355,15 +353,49 @@ body {
     display: flex;
     gap: 4px;
     align-items: center;
+    position: relative;
+    z-index: 1;
+    transition: 0.5s ease-in-out;
+}
+
+.login__btn path {
+    transition: 0.5s ease-in-out;
+}
+
+.login__btn-img {
+    width: 20px;
+    height: 20px;
 }
 
 .login__btn::before {
     content: "";
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    margin-right: 4px;
-    background-image: url("../images/logout.svg");
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    border-radius: 6px;
+    border: 1px solid var(--secondary-green-color);
+    background-color: var(--secondary-white-color);
+
+    transition: transform 0.5s ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.login__btn:hover::before,
+.login__btn:focus::before {
+    transform: scaleX(1);
+}
+
+.login__btn:hover,
+.login__btn:focus {
+    color: var(--secondary-green-color);
+}
+
+.login__btn:hover path {
+    stroke: var(--secondary-green-color);
 }
 
 
@@ -437,6 +469,8 @@ body {
     right: 0;
     bottom: 0;
     z-index: -1;
+    border-radius: 6px;
+    border: 1px solid var(--secondary-green-color);
     background-color: var(--secondary-white-color);
 
     transition: transform 0.5s ease-in-out;
@@ -445,7 +479,7 @@ body {
 }
 
 .banner__btn:hover::before,
-.banner__btn:focus::before{
+.banner__btn:focus::before {
     transform: scaleX(1);
 }
 
@@ -453,6 +487,7 @@ body {
 .banner__btn:focus {
     color: var(--secondary-green-color);
 }
+
 .banner__image {
     max-width: 507px;
 }
@@ -569,7 +604,7 @@ body {
 .product-sort__arrow {
     width: 16px;
     height: 16px;
-    background-image: url("../images/arrow_down.svg");
+    fill: none;
 }
 
 .product-cards {
@@ -684,8 +719,9 @@ body {
     font-weight: 700;
 }
 
-.pagination__item:hover path{
+.pagination__item:hover path {
     stroke: var(--white-color);
+    fill: var(--secondary-green-color);
 }
 
 .pagination__link {
@@ -695,7 +731,11 @@ body {
     color: var(--main-black-color);
 }
 
-.pagination__link svg{
+.pagination__link path {
+    stroke: var(--main-black-color);
+}
+
+.pagination__link svg {
     width: 18px;
     height: 18px;
 }
@@ -761,13 +801,17 @@ body {
     border-radius: 6px;
     display: inline-flex;
     gap: 2px;
+    transition: background-color 1s;
 }
 
-.promo-btn:after {
-    content: "";
+.promo-btn_img {
     width: 18px;
     height: 18px;
-    background-image: url("../images/button_arrow_right.svg");
+    fill: none;
+}
+
+.promo-btn:hover {
+    background-color: #9cc81e;
 }
 
 /* ============= Blog section ============== */
@@ -798,6 +842,8 @@ body {
 
 .blog-card {
     max-width: 268px;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
 }
 
 .blog-card__content {
@@ -844,12 +890,16 @@ body {
     height: 16px;
 }
 
-.blog-card__link:hover svg {
+.blog-card:hover svg {
     fill: var(--secondary-green-color);
 }
 
-.blog-card__link:hover {
+.blog-card:hover .blog-card__link {
     color: var(--secondary-green-color);
+}
+
+.blog-card:hover {
+    border-bottom: 1px solid var(--secondary-green-color);
 }
 
 /* ============== about-us ===================*/
@@ -881,8 +931,18 @@ body {
 }
 
 .advantage__img {
+    width: 83px;
+    height: 90px;
     margin-bottom: 15px;
     transition: 0.5s;
+}
+
+.advantage__card #cactus circle {
+    fill: var(--secondary-green-color);
+}
+
+.advantage__card:hover .circle {
+    fill: #9cc81e;
 }
 
 .advantage__card:hover .advantage__img {
