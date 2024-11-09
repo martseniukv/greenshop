@@ -8,7 +8,7 @@
     <title>Green shop</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 <div id="preloader" class="preloader hidden">
@@ -47,10 +47,10 @@
                         <li class="dropdown__item">
                             <a href="#" class="dropdown__link">
                                 Priming
+                                <svg class="dropdown_img">
+                                    <use href="./images/arrow-sprite.svg#nav-arrow-right"></use>
+                                </svg>
                             </a>
-                            <svg class="dropdown_img">
-                                <use href="./images/arrow-sprite.svg#nav-arrow-right"></use>
-                            </svg>
                             <ul class="dropdown">
                                 <li class="dropdown__item">
                                     <a href="#" class="dropdown__link">
@@ -122,12 +122,13 @@
         </div>
     </section>
 
-    <section class="product">
+    <section class="product-content-section">
         <div class="container">
-            <div class="product__sidebar">
-                <div class="product__filter">
-                    <div class="category">
-                        <h4 class="category__title">Categories</h4>
+
+            <section class="search-section">
+                <div class="search-section__filter">
+                    <div class="search-section__filter-category">
+                        <h4 class="search-section__filter-title">Categories</h4>
                         <ul class="category__list">
                             <li class="category__item">
                                 <a href="#" class="category__link">House Plants</a>
@@ -159,287 +160,287 @@
                         </ul>
                     </div>
                 </div>
-                <div class="super_sale_banner">
+                <div class="search-section__sale-banner">
                     <img src="images/super_sale_banner.svg" alt="super sale banner">
                 </div>
-            </div>
+            </section>
 
-            <div class="product__content">
-                <div class="product-criteria">
-                    <ul class="product-criteria__list">
-                        <li class="product-criteria__item">
-                            <a href="#" class="product-criteria__link">All Plants</a>
+            <section class="product">
+                <div class="product__criteria">
+                    <ul class="product__criteria__list">
+                        <li class="product__criteria__item">
+                            <a href="#" class="product__criteria__link">All Plants</a>
                         </li>
-                        <li class="product-criteria__item">
-                            <a href="#" class="product-criteria__link">New Arrivals</a>
+                        <li class="product__criteria__item">
+                            <a href="#" class="product__criteria__link">New Arrivals</a>
                         </li>
-                        <li class="product-criteria__item">
-                            <a href="#" class="product-criteria__link">Sales</a>
+                        <li class="product__criteria__item">
+                            <a href="#" class="product__criteria__link">Sales</a>
                         </li>
                     </ul>
 
-                    <div class="product-sort">
-                        <p class="product-sort__label">Sort by:</p>
-                        <ul class="product-sort__list">
-                            <li class="product-sort__item">
-                                <a href="#" class="product-sort__link">Default sorting</a>
+                    <div class="product__sort">
+                        <p class="product__sort__label">Sort by:</p>
+                        <ul class="product__sort__list">
+                            <li class="product__sort__item">
+                                <a href="#" class="product__sort__link">Default sorting</a>
                             </li>
                         </ul>
-                        <svg class="product-sort__arrow">
+                        <svg class="product__sort__arrow">
                             <use href="./images/arrow-sprite.svg#arrow-down"></use>
                         </svg>
                     </div>
                 </div>
 
-                <div class="product-cards">
+                <div class="product__cards">
 
-                    <article class="product-card">
-                        <div class="product-card__image-wrapper">
+                    <article class="product__card">
+                        <div class="product__card__image-wrapper">
                             <img src="images/products/barberton_daisy.jpg" alt="Barberton Daisy"
-                                 class="product-card__image">
-                            <ul class="product-card__action-list">
-                                <li class="product-card__action">
+                                 class="product__card__image">
+                            <ul class="product__card__action-list">
+                                <li class="product__card__action">
                                     <svg>
-                                        <use href="./images/product-card-sprite.svg#action-card-shopping-card"></use>
+                                        <use href="./images/product__card-sprite.svg#action-card-shopping-card"></use>
                                     </svg>
                                 </li>
 
-                                <li class="product-card__action">
+                                <li class="product__card__action">
                                     <svg>
-                                        <use href="./images/product-card-sprite.svg#action-card-heart"></use>
+                                        <use href="./images/product__card-sprite.svg#action-card-heart"></use>
                                     </svg>
                                 </li>
-                                <li class="product-card__action">
+                                <li class="product__card__action">
                                     <svg>
-                                        <use href="./images/product-card-sprite.svg#action-card-magnifier"></use>
+                                        <use href="./images/product__card-sprite.svg#action-card-magnifier"></use>
                                     </svg>
                                 </li>
                             </ul>
                         </div>
-                        <h4 class="product-card__name">Barberton Daisy</h4>
-                        <span class="product-card__price">$119.00</span>
+                        <h4 class="product__card__name">Barberton Daisy</h4>
+                        <span class="product__card__price">$119.00</span>
                     </article>
 
-                    <article class="product-card">
-                        <div class="product-card__image-wrapper">
+                    <article class="product__card">
+                        <div class="product__card__image-wrapper">
                             <img src="images/products/angel_wing_begonia.jpg" alt="Angel Wing Begonia"
-                                 class="product-card__image">
-                            <ul class="product-card__action-list">
-                                <li class="product-card__action">
+                                 class="product__card__image">
+                            <ul class="product__card__action-list">
+                                <li class="product__card__action">
                                     <svg>
-                                        <use href="./images/product-card-sprite.svg#action-card-shopping-card"></use>
+                                        <use href="./images/product__card-sprite.svg#action-card-shopping-card"></use>
                                     </svg>
                                 </li>
 
-                                <li class="product-card__action">
+                                <li class="product__card__action">
                                     <svg>
-                                        <use href="./images/product-card-sprite.svg#action-card-heart"></use>
+                                        <use href="./images/product__card-sprite.svg#action-card-heart"></use>
                                     </svg>
                                 </li>
-                                <li class="product-card__action">
+                                <li class="product__card__action">
                                     <svg>
-                                        <use href="./images/product-card-sprite.svg#action-card-magnifier"></use>
+                                        <use href="./images/product__card-sprite.svg#action-card-magnifier"></use>
                                     </svg>
                                 </li>
                             </ul>
                         </div>
-                        <h4 class="product-card__name">Angel Wing Begonia</h4>
-                        <span class="product-card__price">$169.00</span>
+                        <h4 class="product__card__name">Angel Wing Begonia</h4>
+                        <span class="product__card__price">$169.00</span>
                     </article>
 
-                    <article class="product-card">
-                        <div class="product-card__image-wrapper">
-                            <div class="product-card__discount">13% Off</div>
+                    <article class="product__card">
+                        <div class="product__card__image-wrapper">
+                            <div class="product__card__discount">13% Off</div>
                             <img src="images/products/african_violet.jpg" alt="African Violet"
-                                 class="product-card__image">
-                            <ul class="product-card__action-list">
+                                 class="product__card__image">
+                            <ul class="product__card__action-list">
 
-                                <li class="product-card__action">
+                                <li class="product__card__action">
                                     <svg>
-                                        <use href="./images/product-card-sprite.svg#action-card-shopping-card"></use>
+                                        <use href="./images/product__card-sprite.svg#action-card-shopping-card"></use>
                                     </svg>
                                 </li>
 
-                                <li class="product-card__action">
+                                <li class="product__card__action">
                                     <svg>
-                                        <use href="./images/product-card-sprite.svg#action-card-heart"></use>
+                                        <use href="./images/product__card-sprite.svg#action-card-heart"></use>
                                     </svg>
                                 </li>
 
-                                <li class="product-card__action">
+                                <li class="product__card__action">
                                     <svg>
-                                        <use href="./images/product-card-sprite.svg#action-card-magnifier"></use>
+                                        <use href="./images/product__card-sprite.svg#action-card-magnifier"></use>
                                     </svg>
                                 </li>
                             </ul>
                         </div>
-                        <h4 class="product-card__name">African Violet</h4>
-                        <span class="product-card__price">$199.00</span>
+                        <h4 class="product__card__name">African Violet</h4>
+                        <span class="product__card__price">$199.00</span>
                     </article>
 
-                    <article class="product-card">
-                        <div class="product-card__image-wrapper">
+                    <article class="product__card">
+                        <div class="product__card__image-wrapper">
                             <img src="images/products/beach_spider_lily.jpg" alt="Beach Spider Lily"
-                                 class="product-card__image">
-                            <ul class="product-card__action-list">
+                                 class="product__card__image">
+                            <ul class="product__card__action-list">
 
-                                <li class="product-card__action">
+                                <li class="product__card__action">
                                     <svg>
-                                        <use href="./images/product-card-sprite.svg#action-card-shopping-card"></use>
+                                        <use href="./images/product__card-sprite.svg#action-card-shopping-card"></use>
                                     </svg>
                                 </li>
 
-                                <li class="product-card__action">
+                                <li class="product__card__action">
                                     <svg>
-                                        <use href="./images/product-card-sprite.svg#action-card-heart"></use>
+                                        <use href="./images/product__card-sprite.svg#action-card-heart"></use>
                                     </svg>
                                 </li>
 
-                                <li class="product-card__action">
+                                <li class="product__card__action">
                                     <svg>
-                                        <use href="./images/product-card-sprite.svg#action-card-magnifier"></use>
+                                        <use href="./images/product__card-sprite.svg#action-card-magnifier"></use>
                                     </svg>
                                 </li>
 
                             </ul>
                         </div>
-                        <h4 class="product-card__name">Beach Spider Lily</h4>
-                        <span class="product-card__price">$129.00</span>
+                        <h4 class="product__card__name">Beach Spider Lily</h4>
+                        <span class="product__card__price">$129.00</span>
                     </article>
 
-                    <article class="product-card">
-                        <div class="product-card__image-wrapper">
+                    <article class="product__card">
+                        <div class="product__card__image-wrapper">
                             <img src="images/products/blushing_bromeliad.jpg" alt="Blushing Bromeliad"
-                                 class="product-card__image">
-                            <ul class="product-card__action-list">
-                                <li class="product-card__action">
+                                 class="product__card__image">
+                            <ul class="product__card__action-list">
+                                <li class="product__card__action">
                                     <svg>
-                                        <use href="./images/product-card-sprite.svg#action-card-shopping-card"></use>
+                                        <use href="./images/product__card-sprite.svg#action-card-shopping-card"></use>
                                     </svg>
                                 </li>
 
-                                <li class="product-card__action">
+                                <li class="product__card__action">
                                     <svg>
-                                        <use href="./images/product-card-sprite.svg#action-card-heart"></use>
+                                        <use href="./images/product__card-sprite.svg#action-card-heart"></use>
                                     </svg>
                                 </li>
-                                <li class="product-card__action">
+                                <li class="product__card__action">
                                     <svg>
-                                        <use href="./images/product-card-sprite.svg#action-card-magnifier"></use>
+                                        <use href="./images/product__card-sprite.svg#action-card-magnifier"></use>
                                     </svg>
                                 </li>
                             </ul>
                         </div>
-                        <h4 class="product-card__name">Blushing Bromeliad</h4>
-                        <span class="product-card__price">$139.00</span>
+                        <h4 class="product__card__name">Blushing Bromeliad</h4>
+                        <span class="product__card__price">$139.00</span>
                     </article>
 
-                    <article class="product-card">
-                        <div class="product-card__image-wrapper">
+                    <article class="product__card">
+                        <div class="product__card__image-wrapper">
                             <img src="images/products/aluminum_plant.jpg" alt="Aluminum Plant"
-                                 class="product-card__image">
-                            <ul class="product-card__action-list">
-                                <li class="product-card__action">
+                                 class="product__card__image">
+                            <ul class="product__card__action-list">
+                                <li class="product__card__action">
                                     <svg>
-                                        <use href="./images/product-card-sprite.svg#action-card-shopping-card"></use>
+                                        <use href="./images/product__card-sprite.svg#action-card-shopping-card"></use>
                                     </svg>
                                 </li>
 
-                                <li class="product-card__action">
+                                <li class="product__card__action">
                                     <svg>
-                                        <use href="./images/product-card-sprite.svg#action-card-heart"></use>
+                                        <use href="./images/product__card-sprite.svg#action-card-heart"></use>
                                     </svg>
                                 </li>
-                                <li class="product-card__action">
+                                <li class="product__card__action">
                                     <svg>
-                                        <use href="./images/product-card-sprite.svg#action-card-magnifier"></use>
+                                        <use href="./images/product__card-sprite.svg#action-card-magnifier"></use>
                                     </svg>
                                 </li>
                             </ul>
                         </div>
-                        <h4 class="product-card__name">Aluminum Plant</h4>
-                        <span class="product-card__price">$179.00</span>
+                        <h4 class="product__card__name">Aluminum Plant</h4>
+                        <span class="product__card__price">$179.00</span>
                     </article>
 
-                    <article class="product-card">
-                        <div class="product-card__image-wrapper">
+                    <article class="product__card">
+                        <div class="product__card__image-wrapper">
                             <img src="images/products/bird_nest_fern.jpg" alt="Bird's Nest Fern"
-                                 class="product-card__image">
-                            <ul class="product-card__action-list">
-                                <li class="product-card__action">
+                                 class="product__card__image">
+                            <ul class="product__card__action-list">
+                                <li class="product__card__action">
                                     <svg>
-                                        <use href="./images/product-card-sprite.svg#action-card-shopping-card"></use>
+                                        <use href="./images/product__card-sprite.svg#action-card-shopping-card"></use>
                                     </svg>
                                 </li>
 
-                                <li class="product-card__action">
+                                <li class="product__card__action">
                                     <svg>
-                                        <use href="./images/product-card-sprite.svg#action-card-heart"></use>
+                                        <use href="./images/product__card-sprite.svg#action-card-heart"></use>
                                     </svg>
                                 </li>
-                                <li class="product-card__action">
+                                <li class="product__card__action">
                                     <svg>
-                                        <use href="./images/product-card-sprite.svg#action-card-magnifier"></use>
+                                        <use href="./images/product__card-sprite.svg#action-card-magnifier"></use>
                                     </svg>
                                 </li>
                             </ul>
                         </div>
-                        <h4 class="product-card__name">Bird's Nest Fern</h4>
-                        <span class="product-card__price">$99.00</span>
+                        <h4 class="product__card__name">Bird's Nest Fern</h4>
+                        <span class="product__card__price">$99.00</span>
                     </article>
 
-                    <article class="product-card">
-                        <div class="product-card__image-wrapper">
+                    <article class="product__card">
+                        <div class="product__card__image-wrapper">
                             <img src="images/products/broadleaf_lady_palm.jpg" alt="Broadleaf Lady Palm"
-                                 class="product-card__image">
-                            <ul class="product-card__action-list">
-                                <li class="product-card__action">
+                                 class="product__card__image">
+                            <ul class="product__card__action-list">
+                                <li class="product__card__action">
                                     <svg>
-                                        <use href="./images/product-card-sprite.svg#action-card-shopping-card"></use>
+                                        <use href="./images/product__card-sprite.svg#action-card-shopping-card"></use>
                                     </svg>
                                 </li>
 
-                                <li class="product-card__action">
+                                <li class="product__card__action">
                                     <svg>
-                                        <use href="./images/product-card-sprite.svg#action-card-heart"></use>
+                                        <use href="./images/product__card-sprite.svg#action-card-heart"></use>
                                     </svg>
                                 </li>
-                                <li class="product-card__action">
+                                <li class="product__card__action">
                                     <svg>
-                                        <use href="./images/product-card-sprite.svg#action-card-magnifier"></use>
+                                        <use href="./images/product__card-sprite.svg#action-card-magnifier"></use>
                                     </svg>
                                 </li>
                             </ul>
                         </div>
-                        <h4 class="product-card__name">Broadleaf Lady Palm</h4>
-                        <span class="product-card__price">$59.00</span>
+                        <h4 class="product__card__name">Broadleaf Lady Palm</h4>
+                        <span class="product__card__price">$59.00</span>
                     </article>
 
-                    <article class="product-card">
-                        <div class="product-card__image-wrapper">
+                    <article class="product__card">
+                        <div class="product__card__image-wrapper">
                             <img src="images/products/chinese_evergreen.jpg" alt="Chinese Evergreen"
-                                 class="product-card__image">
-                            <ul class="product-card__action-list">
-                                <li class="product-card__action">
+                                 class="product__card__image">
+                            <ul class="product__card__action-list">
+                                <li class="product__card__action">
                                     <svg>
-                                        <use href="./images/product-card-sprite.svg#action-card-shopping-card"></use>
+                                        <use href="./images/product__card-sprite.svg#action-card-shopping-card"></use>
                                     </svg>
                                 </li>
 
-                                <li class="product-card__action">
+                                <li class="product__card__action">
                                     <svg>
-                                        <use href="./images/product-card-sprite.svg#action-card-heart"></use>
+                                        <use href="./images/product__card-sprite.svg#action-card-heart"></use>
                                     </svg>
                                 </li>
-                                <li class="product-card__action">
+                                <li class="product__card__action">
                                     <svg>
-                                        <use href="./images/product-card-sprite.svg#action-card-magnifier"></use>
+                                        <use href="./images/product__card-sprite.svg#action-card-magnifier"></use>
                                     </svg>
                                 </li>
                             </ul>
                         </div>
-                        <h4 class="product-card__name">Chinese Evergreen</h4>
-                        <span class="product-card__price">$39.00</span>
+                        <h4 class="product__card__name">Chinese Evergreen</h4>
+                        <span class="product__card__price">$39.00</span>
                     </article>
 
                 </div>
@@ -464,7 +465,7 @@
                         </a>
                     </li>
                 </ul>
-            </div>
+            </section>
         </div>
     </section>
 

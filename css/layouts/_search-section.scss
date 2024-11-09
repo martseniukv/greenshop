@@ -1,0 +1,44 @@
+.search-section {
+  max-width: 310px;
+
+  &__filter {
+    background-color: var(--secondary-white-color);
+    padding: 14px 189px 370px 18px; /*TODO: remove 370px*/
+
+    img {
+      height: 470px;
+    }
+  }
+
+  &__filter-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 0.88;
+    color: var(--main-black-color);
+  }
+
+  .category__list {
+    padding-top: 7px;
+  }
+
+  .category__item {
+    &:hover {
+      .category__link {
+        color: var(--secondary-green-color);
+      }
+    }
+  }
+
+  .category__link {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 2.6;
+    color: var(--secondary-grey-color);
+  }
+
+  .super_sale_banner {
+    img {
+      width: 100%;
+    }
+  }
+}

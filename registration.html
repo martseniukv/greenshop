@@ -8,11 +8,11 @@
     <title>Registration</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/registration.css">
 </head>
 <body>
 
-<div class="registration__popup">
+<div class="registration">
 
     <h3 class="registration__title">Login <span class="registration__type_active">Register</span></h3>
 
@@ -20,7 +20,7 @@
 
     <form class="registration__form" method="post" name="registration">
 
-        <div class="input_wrapper">
+        <div class="registration__input__wrapper">
             <label for="username"></label>
             <input id="username"
                    name="username"
@@ -30,7 +30,7 @@
             >
         </div>
 
-        <div class="input_wrapper">
+        <div class="registration__input__wrapper">
             <label for="email"></label>
             <input id="email"
                    name="email"
@@ -40,7 +40,7 @@
             >
         </div>
 
-        <div class="input_wrapper">
+        <div class="registration__input__wrapper">
             <label for="password"></label>
             <input id="password"
                    name="password"
@@ -51,7 +51,7 @@
             <img class="password__visible" src="images/visible_password.svg" alt="Password visible">
         </div>
 
-        <div class="input_wrapper">
+        <div class="registration__input__wrapper">
             <label for="confirm__password"></label>
             <input id="confirm__password"
                    name="confirm__password"
@@ -67,7 +67,7 @@
 
     <div class="registration__account">
 
-        <p class="account__title">Or register with</p>
+        <p class="registration__account__title">Or register with</p>
 
         <a class="registration__link">
             <img src="images/google.svg" alt="Google logo">
