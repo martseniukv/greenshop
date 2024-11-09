@@ -243,9 +243,8 @@ body {
 
 
 /*================ index.html ==================*/
-
 .hidden {
-    display: none;
+    visibility: hidden;
 }
 
 .preloader {
