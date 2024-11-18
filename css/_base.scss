@@ -1,0 +1,40 @@
+
+:root {
+  --main-black-color: #3d3d3d;
+  --main-green-color: #46a358;
+  --main-grey-color: #727272;
+  --secondary-grey-color: #cbcbcb;
+  --white-color: #ffffff;
+  --secondary-white-color: #fbfbfb;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Cera Pro', sans-serif;
+  font-weight: 400;
+  color: var(--main-black-color);
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @media (max-width: 768px) {
+    padding: 0 15px;
+    //margin: 0 25px;
+  }
+}

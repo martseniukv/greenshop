@@ -1,0 +1,146 @@
+.registration {
+  max-width: 500px;
+  margin: 30px auto;
+  border: 1px solid var(--main-black-color);
+  border-radius: 5px;
+  padding: 52px 100px 50px;
+  border-bottom: 10px solid var(--main-green-color);
+
+  & p {
+    font-size: 13px;
+    line-height: 1.23;
+  }
+
+  &__title {
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 0.8;
+    margin-bottom: 40px;
+
+    & span::before {
+      content: '';
+      border-left: 2px solid var(--main-black-color);
+      height: 16px;
+      padding-left: 10px;
+      margin-left: 10px;
+    }
+  }
+
+  &__type_active {
+    color: var(--main-green-color);
+  }
+
+  &__text {
+    margin-bottom: 15px;
+  }
+
+  &__form {
+    width: 100%;
+  }
+
+  &__input__wrapper {
+    margin-bottom: 15px;
+    max-width: 300px;
+    height: 40px;
+    position: relative;
+
+    &:last-of-type {
+      margin-bottom: 41px;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    height: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.15;
+    color: #a5a5a5;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    padding: 12px 0 12px 14px;
+    position: relative;
+  }
+
+  &__btn {
+    color: var(--white-color);
+    background-color: var(--main-green-color);
+    font-weight: 700;
+    font-size: 17px;
+    width: 100%;
+    height: 45px;
+    margin-bottom: 36px;
+    border-radius: 5px;
+    border: none;
+    transition: 1s;
+
+    &:hover {
+      background-color: var(--white-color);
+      color: var(--main-green-color);
+      border: 1px solid var(--main-green-color);
+    }
+  }
+
+  &__account {
+    max-width: 300px;
+  }
+
+  &__account__title {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 27px;
+
+    &:before, &:after {
+      content: '';
+      flex-grow: 1;
+      border-bottom: 1px solid #EAEAEA;
+      margin: 0 6px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 65px;
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: var(--main-grey-color);
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+
+    &:hover {
+      border: 1px solid var(--main-green-color);
+    }
+
+    &:first-of-type {
+      margin-bottom: 15px;
+    }
+
+    &:last-child {
+      padding: 10px 60px;
+    }
+
+    & img {
+      display: block;
+      width: 20px;
+      height: 20px;
+      margin-right: 9px;
+    }
+
+    &:last-of-type img {
+      margin-right: 4px;
+    }
+  }
+}
+
+.password__visible {
+  position: absolute;
+  right: 13px;
+  top: 13px;
+}

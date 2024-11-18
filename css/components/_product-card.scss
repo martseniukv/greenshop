@@ -1,0 +1,105 @@
+.product__card {
+  max-width: 250px;
+  border-top: 1px solid transparent;
+
+  &:hover {
+    border-top: 1px solid var(--main-green-color);
+
+    .product__card__action-list {
+      display: flex;
+    }
+  }
+
+  &__action svg {
+    width: 20px;
+    height: 20px;
+
+    path {
+      fill: var(--main-black-color);
+    }
+  }
+
+  &__action:hover svg {
+    fill: var(--main-green-color);
+  }
+
+  &__image-wrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 12px;
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__discount {
+    padding: 10px 6px;
+    text-transform: uppercase;
+    position: absolute;
+    left: 0;
+    top: 14px;
+    color: var(--white-color);
+    background-color: var(--main-green-color);
+    z-index: 1;
+  }
+
+  &__action-list {
+    gap: 10px;
+    bottom: 7px;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: absolute;
+  }
+
+  &__action {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white-color);
+    border-radius: 4px;
+  }
+
+  &__name {
+    margin-bottom: 6px;
+  }
+
+  &__curr-price {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 0.85;
+    color: var(--main-green-color);
+  }
+
+  &__prev-price{
+    color: var(--secondary-grey-color);
+    text-decoration: line-through;
+    margin-left: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .product__card{
+
+
+    &__name {
+      text-align: center;
+    }
+
+    &__prices{
+      display: flex;
+      justify-content: center;
+    }
+    &__curr-price {
+      text-align: center;
+    }
+    &__prev-price{
+      text-align: center;
+    }
+  }
+}

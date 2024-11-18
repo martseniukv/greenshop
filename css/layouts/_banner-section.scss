@@ -1,0 +1,125 @@
+.main__banner {
+  margin-bottom: 45px;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(135deg,
+            rgba(245, 245, 245, 0.5) 0%,
+            rgba(245, 245, 245, 0.5) 100%);
+  }
+
+  .banner__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .owl-dots{
+    text-align: center;
+    .owl-dot{
+      span{
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #1a712a;
+        margin: 10px;
+        display: inline-block;
+      }
+    }
+  }
+  .banner__info {
+    max-width: 600px;
+    padding: 68px 0 85px 43px;
+  }
+
+  .banner__subtitle {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--main-black-color);
+    margin-bottom: 7px;
+  }
+
+  .banner__title {
+    font-weight: 900;
+    line-height: 1;
+    font-size: 70px;
+    text-transform: uppercase;
+    color: var(--main-black-color);
+    margin-bottom: 5px;
+  }
+
+  .banner__highlight {
+    font-weight: 900;
+    color: var(--main-green-color);
+  }
+
+  .banner__description {
+    font-weight: 400;
+    line-height: 1.7;
+    font-size: 14px;
+    color: var(--main-grey-color);
+    margin-bottom: 44px;
+  }
+
+  .banner__btn {
+    display: inline-block;
+    border-radius: 6px;
+    padding: 11px 27px;
+    background: var(--main-green-color);
+    color: var(--white-color);
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s ease-in-out;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      border-radius: 6px;
+      border: 1px solid var(--main-green-color);
+      background-color: var(--secondary-white-color);
+      transition: transform 0.5s ease-in-out;
+      transform: scaleX(0);
+      transform-origin: left;
+    }
+
+    &:hover::before,
+    &:focus::before {
+      transform: scaleX(1);
+    }
+
+    &:hover,
+    &:focus {
+      color: var(--main-green-color);
+    }
+  }
+
+  .banner__image {
+    max-width: 507px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+
+  .main__banner {
+
+    .banner__info{
+      padding: 68px 0 85px 10px;
+    }
+
+    .banner__image {
+      display: none;
+    }
+  }
+}

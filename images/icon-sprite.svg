@@ -39,4 +39,10 @@
         <path d="M13.6342 6.35826C13.3592 3.37493 12.2425 2.2916 7.80082 2.2916C1.88332 2.2916 1.88332 4.2166 1.88332 9.99993C1.88332 15.7833 1.88332 17.7083 7.80082 17.7083C12.2425 17.7083 13.3592 16.6249 13.6342 13.6416"
               stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
+
+    <symbol id="burger-menu" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+        <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+        <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
 </svg>
