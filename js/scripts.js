@@ -20,7 +20,6 @@ $('.blog-cards__owl-carousel').owlCarousel({
     autoplayTimeout: 6500,
     autoplaySpeed: 1000,
     loop: true,
-    center: true,
     responsive: {
         0: {
             items: 1
