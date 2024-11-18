@@ -1,10 +1,5 @@
 .blog-section {
   margin-bottom: 100px;
-
-  //.container {
-  //  display: flex;
-  //  justify-content: center;
-  //}
 }
 
 .blog-title {
@@ -26,8 +21,11 @@
 .blog-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
-  justify-content: space-between;
+
+  .owl-item {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .blog-card {

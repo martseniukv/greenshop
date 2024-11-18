@@ -12,7 +12,30 @@ $('.main__banner-carousel').owlCarousel({
         }
     }
 
-})
+});
+
+$('.blog-cards__owl-carousel').owlCarousel({
+    autoplay: true,
+    items:4,
+    autoplayTimeout: 6500,
+    autoplaySpeed: 1000,
+    loop: true,
+    center: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        768: {
+          items: 2  
+        },
+        1000: {
+            items: 3
+        },
+        1100: {
+            items: 4
+        }
+    }
+});
 
 $(function () {
     let sliderRange = "#slider-range";
