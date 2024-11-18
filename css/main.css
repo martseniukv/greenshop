@@ -167,6 +167,9 @@ button {
   transition: 0.4s;
   margin-top: 25px;
 }
+.header .navigation__list__item:hover::after {
+  width: 100%;
+}
 .header .navigation__list__link {
   color: var(--main-black-color);
 }
@@ -482,6 +485,7 @@ button {
   justify-content: space-between;
 }
 .search-section .category__item:hover .category__link, .search-section .category__item:hover .category__item__counter {
+  font-weight: 700;
   color: var(--main-green-color);
 }
 .search-section .category__link {
@@ -566,12 +570,15 @@ button {
 }
 .product__criteria__link {
   font-size: 15px;
+  line-height: 1.06667;
   color: var(--main-black-color);
 }
 .product__sort {
   display: flex;
 }
 .product__sort__label {
+  font-size: 15px;
+  line-height: 1.06667;
   margin-right: 8px;
 }
 .product__sort__list {
@@ -580,6 +587,7 @@ button {
 }
 .product__sort__link {
   font-size: 15px;
+  line-height: 1.06667;
   color: var(--main-black-color);
 }
 .product__sort__arrow {
@@ -589,11 +597,16 @@ button {
 }
 .product__cards {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   row-gap: 70px;
   column-gap: 30px;
   margin-bottom: 90px;
+}
+@media (max-width: 1110px) {
+  .product__cards {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 576px) {
@@ -694,7 +707,7 @@ button {
 .product__card__curr-price {
   font-size: 18px;
   font-weight: 700;
-  line-height: 0.85;
+  line-height: 0.88;
   color: var(--main-green-color);
 }
 .product__card__prev-price {
@@ -838,6 +851,7 @@ button {
   .promo-section .container {
     flex-direction: column;
     align-items: center;
+    gap: 40px;
   }
 }
 @media (max-width: 768px) {
@@ -874,6 +888,7 @@ button {
   text-align: center;
   color: #3c3c3c;
   font-size: 30px;
+  font-weight: 700;
   line-height: 16px;
   margin-bottom: 15px;
 }
@@ -899,6 +914,9 @@ button {
   max-width: 268px;
   cursor: pointer;
   border-bottom: 1px solid transparent;
+}
+.blog-card img {
+  margin-bottom: 8px;
 }
 .blog-card__content {
   padding: 0 11px 12px 15px;
@@ -1018,6 +1036,7 @@ button {
 .about-us__form .form__title {
   margin-bottom: 18px;
   font-weight: 700;
+  line-height: 0.88889;
   font-size: 18px;
   color: var(--main-black-color);
 }
@@ -1042,7 +1061,7 @@ button {
   color: var(--white-color);
   font-size: 18px;
   font-weight: 700;
-  line-height: 0.5;
+  line-height: 0.88889;
   cursor: pointer;
 }
 .about-us__form .form__text {

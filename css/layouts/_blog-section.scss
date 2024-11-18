@@ -6,6 +6,7 @@
   text-align: center;
   color: #3c3c3c;
   font-size: 30px;
+  font-weight: 700;
   line-height: 16px;
   margin-bottom: 15px;
 }
@@ -33,6 +34,9 @@
   cursor: pointer;
   border-bottom: 1px solid transparent;
 
+  img {
+    margin-bottom: 8px;
+  }
   &__content {
     padding: 0 11px 12px 15px;
     background-color: var(--secondary-white-color);

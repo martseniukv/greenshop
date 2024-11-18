@@ -26,6 +26,7 @@
     justify-content: space-between;
     &:hover {
       .category__link, .category__item__counter {
+        font-weight: 700;
         color: var(--main-green-color);
       }
     }
