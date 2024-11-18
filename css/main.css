@@ -1134,13 +1134,13 @@ button {
   max-width: 206px;
 }
 .footer__address:before {
-  background-image: url("../../images/location.svg");
+  background-image: url("../images/location.svg");
 }
 .footer__email:before {
-  background-image: url("../../images/message.svg");
+  background-image: url("../images/message.svg");
 }
 .footer__phone:before {
-  background-image: url("../../images/calling.svg");
+  background-image: url("../images/calling.svg");
 }
 .footer__main {
   display: flex;
