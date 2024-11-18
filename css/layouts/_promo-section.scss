@@ -8,6 +8,7 @@
 }
 
 .promo-container {
+  max-width: 586px;
   position: relative;
   background-color: #FBFBFB;
 }
@@ -49,12 +50,12 @@
   font-size: 14px;
   line-height: 1.7;
   margin-bottom: 25px;
-  color: var(--secondary-grey-color);
+  color: var(--main-grey-color);
   text-align: right;
 }
 
 .promo-btn {
-  background-color: var(--secondary-green-color);
+  background-color: var(--main-green-color);
   padding: 10px 28px;
   color: var(--white-color);
   border-radius: 6px;
@@ -70,5 +71,57 @@
 
   &:hover {
     background-color: #9cc81e;
+  }
+}
+
+@media (max-width: 1200px) {
+
+  .promo-section {
+
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+
+  .promo-section {
+
+    .container {
+      padding-top: 0;
+      margin-bottom: 50px;
+      flex-direction: column;
+
+      .promo-container {
+
+        .promo-content {
+
+          padding: 15px;
+          margin-left: 0;
+          align-items: center;
+
+          .promo-image {
+            position: relative;
+            margin-bottom: 20px;
+          }
+
+          .promo-title {
+
+            text-align: center;
+            max-width: inherit;
+          }
+
+          .promo-description {
+            text-align: center;
+          }
+
+          .promo-btn {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
   }
 }

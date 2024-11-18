@@ -4,7 +4,7 @@
   border: 1px solid var(--main-black-color);
   border-radius: 5px;
   padding: 52px 100px 50px;
-  border-bottom: 10px solid var(--secondary-green-color);
+  border-bottom: 10px solid var(--main-green-color);
 
   & p {
     font-size: 13px;
@@ -29,7 +29,7 @@
   }
 
   &__type_active {
-    color: var(--secondary-green-color);
+    color: var(--main-green-color);
   }
 
   &__text {
@@ -66,7 +66,7 @@
 
   &__btn {
     color: var(--white-color);
-    background-color: var(--secondary-green-color);
+    background-color: var(--main-green-color);
     font-weight: 700;
     font-size: 17px;
     width: 100%;
@@ -78,8 +78,8 @@
 
     &:hover {
       background-color: var(--white-color);
-      color: var(--secondary-green-color);
-      border: 1px solid var(--secondary-green-color);
+      color: var(--main-green-color);
+      border: 1px solid var(--main-green-color);
     }
   }
 
@@ -110,12 +110,12 @@
     font-size: 13px;
     line-height: 1.2;
     font-weight: 500;
-    color: var(--secondary-grey-color);
+    color: var(--main-grey-color);
     border: 1px solid #eaeaea;
     border-radius: 5px;
 
     &:hover {
-      border: 1px solid var(--secondary-green-color);
+      border: 1px solid var(--main-green-color);
     }
 
     &:first-of-type {

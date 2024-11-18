@@ -3,7 +3,7 @@
   border-top: 1px solid transparent;
 
   &:hover {
-    border-top: 1px solid var(--secondary-green-color);
+    border-top: 1px solid var(--main-green-color);
 
     .product__card__action-list {
       display: flex;
@@ -20,7 +20,7 @@
   }
 
   &__action:hover svg {
-    fill: var(--secondary-green-color);
+    fill: var(--main-green-color);
   }
 
   &__image-wrapper {
@@ -41,7 +41,7 @@
     left: 0;
     top: 14px;
     color: var(--white-color);
-    background-color: var(--secondary-green-color);
+    background-color: var(--main-green-color);
     z-index: 1;
   }
 
@@ -68,10 +68,38 @@
     margin-bottom: 6px;
   }
 
-  &__price {
+  &__curr-price {
     font-size: 18px;
     font-weight: 700;
     line-height: 0.85;
-    color: var(--secondary-green-color);
+    color: var(--main-green-color);
+  }
+
+  &__prev-price{
+    color: var(--secondary-grey-color);
+    text-decoration: line-through;
+    margin-left: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .product__card{
+
+
+    &__name {
+      text-align: center;
+    }
+
+    &__prices{
+      display: flex;
+      justify-content: center;
+    }
+    &__curr-price {
+      text-align: center;
+    }
+    &__prev-price{
+      text-align: center;
+    }
   }
 }

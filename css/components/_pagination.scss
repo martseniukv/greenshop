@@ -14,7 +14,7 @@
 
     &:hover {
       border: none;
-      background-color: var(--secondary-green-color);
+      background-color: var(--main-green-color);
 
       .pagination__link {
         color: var(--white-color);
@@ -23,7 +23,7 @@
 
       path {
         stroke: var(--white-color);
-        fill: var(--secondary-green-color);
+        fill: var(--main-green-color);
       }
     }
   }
@@ -42,5 +42,14 @@
       width: 18px;
       height: 18px;
     }
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .pagination{
+
+    align-self: center;
   }
 }

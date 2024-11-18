@@ -1,0 +1,20 @@
+.product-content-section {
+  margin-bottom: 94px;
+
+  .container {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .product-content-section{
+
+    margin-bottom: 50px;
+    .container {
+      flex-direction: column;
+    }
+  }
+}
