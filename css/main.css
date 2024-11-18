@@ -462,7 +462,7 @@ button {
 }
 .search-section__filter {
   background-color: var(--secondary-white-color);
-  padding: 14px 24px 18px 18px; /*TODO: remove 370px*/
+  padding: 14px 24px 18px 18px;
 }
 .search-section__filter img {
   height: 470px;
