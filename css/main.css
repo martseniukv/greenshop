@@ -889,8 +889,10 @@ button {
 .blog-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
-  justify-content: space-between;
+}
+.blog-cards .owl-item {
+  display: flex;
+  justify-content: center;
 }
 
 .blog-card {
