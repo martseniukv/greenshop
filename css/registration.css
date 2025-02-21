@@ -144,6 +144,10 @@ button {
   padding: 12px 0 12px 14px;
   position: relative;
 }
+.registration__input:focus {
+  outline: none !important;
+  border-color: var(--main-green-color);
+}
 .registration__btn {
   color: var(--white-color);
   background-color: var(--main-green-color);

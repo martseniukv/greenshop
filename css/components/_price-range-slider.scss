@@ -1,12 +1,6 @@
-
-
-.search-section__filter-price{
-
-  margin-bottom: 46px;
-}
-
 .slider-range__form{
-  margin-left: 12px;
+  padding-left: 12px;
+  padding-top: 7px;
 
   label {
     font-size: 15px;
@@ -49,8 +43,8 @@
   border-radius: 50%;
   border: 1px solid var(--white-color);
   background-color: var(--main-green-color);
-}
 
+}
 .ui-widget.ui-widget-content{
   border: none;
 }
@@ -62,7 +56,6 @@
   width: 210px;
   height: 4px;
   background-color: rgba(70, 163, 88, 0.2);
-  //background-color: var(--main-green-color);
 }
 
 .ui-slider-range.ui-corner-all.ui-widget-header{
@@ -71,7 +64,6 @@
   height: 4px;
   border: none;
   background-color: var(--main-green-color);
-
 }
 
 
