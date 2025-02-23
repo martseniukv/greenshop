@@ -425,6 +425,11 @@ button {
   width: 100%;
 }
 
+@media (max-width: 1024px) {
+  .banner__image {
+    display: none;
+  }
+}
 @media (max-width: 768px) {
   .main__banner .banner__info {
     padding: 68px 0 85px 10px;
