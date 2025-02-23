@@ -120,9 +120,6 @@ button {
 .registration__text {
   margin-bottom: 15px;
 }
-.registration__form {
-  width: 100%;
-}
 .registration__input__wrapper {
   margin-bottom: 15px;
   max-width: 300px;
@@ -144,12 +141,17 @@ button {
   padding: 12px 0 12px 14px;
   position: relative;
 }
+.registration__input:focus {
+  outline: none !important;
+  border-color: var(--main-green-color);
+}
 .registration__btn {
   color: var(--white-color);
   background-color: var(--main-green-color);
   font-weight: 700;
   font-size: 17px;
   width: 100%;
+  max-width: 300px;
   height: 45px;
   margin-bottom: 36px;
   border-radius: 5px;
@@ -180,7 +182,7 @@ button {
 .registration__link {
   display: flex;
   align-items: center;
-  width: 100%;
+  max-width: 100%;
   padding: 10px 65px;
   font-size: 13px;
   line-height: 1.2;
@@ -212,6 +214,23 @@ button {
   position: absolute;
   right: 13px;
   top: 13px;
+}
+
+@media (min-width: 300px) {
+  .registration {
+    border: none;
+    padding: 25px 50px 25px;
+  }
+  .registration-wrapper {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .registration__link {
+    padding: 10px 20px;
+  }
+  .registration__link:last-child {
+    padding: 10px 18px;
+  }
 }
 
 /*# sourceMappingURL=registration.css.map */

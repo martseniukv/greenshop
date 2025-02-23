@@ -20,6 +20,7 @@ $('.blog-cards__owl-carousel').owlCarousel({
     autoplayTimeout: 6500,
     autoplaySpeed: 1000,
     loop: true,
+    margin: 0,
     responsive: {
         0: {
             items: 1
@@ -36,6 +37,11 @@ $('.blog-cards__owl-carousel').owlCarousel({
     }
 });
 
+
+$( function() {
+    $( "#search-section__filter-accordion" ).accordion();
+} );
+
 $(function () {
     let sliderRange = "#slider-range";
     $(sliderRange).slider({
@@ -51,23 +57,24 @@ $(function () {
         " - $" + $(sliderRange).slider("values", 1));
 });
 
+var menuBtn = document.querySelector('.menu-btn');
+var nav = document.querySelector('nav');
+var wrapper = document.querySelector('.navigation__mobile_wrapper');
+var lineOne = document.querySelector('.menu-btn .line--1');
+var lineTwo = document.querySelector('.menu-btn .line--2');
+var lineThree = document.querySelector('.menu-btn .line--3');
+var link = document.querySelector('.nav-links');
+menuBtn.addEventListener('click', () => {
+    wrapper.classList.toggle('nav-open');
+    lineOne.classList.toggle('line-cross');
+    lineTwo.classList.toggle('line-fade-out');
+    lineThree.classList.toggle('line-cross');
+    link.classList.toggle('fade-in');
+});
 
 $(document).ready(function () {
-    $(".dropdown-toggle").on("click", function () {
-        $(".dropdown-menu").toggle(); // Toggle visibility of the dropdown menu
-    });
-
-    // Handle dropdown item click
-    $(".dropdown-item").on("click", function () {
-        const selectedText = $(this).text(); // Get the text of the clicked item
-        $(".dropdown-toggle").text(selectedText); // Update the toggle button text
-        $(".dropdown-menu").hide(); // Hide the menu
-    });
-
-    // Close dropdown when clicking outside
-    $(document).on("click", function (e) {
-        if (!$(e.target).closest(".dropdown").length) {
-            $(".dropdown-menu").hide();
-        }
+    $(".search-section__filter__header").click(function () {
+        $(this).find(".search-section__filter__arrow").toggleClass("rotate");
+        $(this).siblings(".dropdown__content").slideToggle(500);
     });
 });

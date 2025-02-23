@@ -9,7 +9,6 @@ $bp-desktop: 1200px;
 
 @import "./components/preloader";
 @import "./layouts/header";
-@import "./components/price-range-slider";
 
 @import "./layouts/banner-section";
 @import "./layouts/search-section";
@@ -21,3 +20,7 @@ $bp-desktop: 1200px;
 @import "./layouts/blog-section";
 @import "./layouts/about-us-section";
 @import "./layouts/footer";
+
+
+@import "./components/price-range-slider";
+@import "./components/mobile-menu";

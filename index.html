@@ -24,110 +24,116 @@
     <div class="container">
         <a href="#"><img src="images/logo.svg" alt="logo"></a>
 
-        <nav class="navigation">
-            <ul class="navigation__list">
-                <li class="navigation__list__item">
-                    <a class="navigation__list__link" href="#">Home</a>
+        <div class="navigation__mobile_wrapper">
+            <nav class="navigation">
+
+                <ul class="navigation__list">
+                    <li class="navigation__list__item">
+                        <a class="navigation__list__link" href="#">Home</a>
+                    </li>
+                    <li class="navigation__list__item">
+                        <a class="navigation__list__link" href="#">Shop</a>
+                    </li>
+                    <li class="navigation__list__item">
+                        <a class="navigation__list__link" href="#">Plant Care</a>
+                        <ul class="dropdown">
+                            <li class="dropdown__item">
+                                <a href="#" class="dropdown__link">
+                                    Drainage
+                                </a>
+                            </li>
+                            <li class="dropdown__item">
+                                <a href="#" class="dropdown__link">
+                                    Fungicides
+                                </a>
+                            </li>
+                            <li class="dropdown__item">
+                                <a href="#" class="dropdown__link">
+                                    Fertilizer
+                                </a>
+                            </li>
+                            <li class="dropdown__item">
+                                <a href="#" class="dropdown__link">
+                                    Priming
+                                    <svg class="dropdown_img">
+                                        <use href="./images/icon-sprite.svg#nav-arrow-right"></use>
+                                    </svg>
+                                </a>
+                                <ul class="dropdown">
+                                    <li class="dropdown__item">
+                                        <a href="#" class="dropdown__link">
+                                            Universal
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="#" class="dropdown__link">
+                                            For Ficus
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="#" class="dropdown__link">
+                                            For Cacti
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="#" class="dropdown__link">
+                                            For Citrus
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="#" class="dropdown__link">
+                                            For those in bloom
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="#" class="dropdown__link">
+                                            For Orchids
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navigation__list__item">
+                        <a class="navigation__list__link" href="#">Blogs</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <ul class="header__action">
+                <li class="header__action-item">
+                    <a href="#" class="header__action-link">
+                        <svg>
+                            <use href="./images/product-card-sprite.svg#action-card-magnifier"></use>
+                        </svg>
+                    </a>
                 </li>
-                <li class="navigation__list__item">
-                    <a class="navigation__list__link" href="#">Shop</a>
+                <li class="header__action-item">
+                    <a href="#" class="header__action-link">
+                        <svg>
+                            <use href="./images/product-card-sprite.svg#action-card-shopping-card"></use>
+                        </svg>
+                        <span class="header__cart-count">16</span>
+                    </a>
                 </li>
-                <li class="navigation__list__item">
-                    <a class="navigation__list__link" href="#">Plant Care</a>
-                    <ul class="dropdown">
-                        <li class="dropdown__item">
-                            <a href="#" class="dropdown__link">
-                                Drainage
-                            </a>
-                        </li>
-                        <li class="dropdown__item">
-                            <a href="#" class="dropdown__link">
-                                Fungicides
-                            </a>
-                        </li>
-                        <li class="dropdown__item">
-                            <a href="#" class="dropdown__link">
-                                Fertilizer
-                            </a>
-                        </li>
-                        <li class="dropdown__item">
-                            <a href="#" class="dropdown__link">
-                                Priming
-                                <svg class="dropdown_img">
-                                    <use href="./images/icon-sprite.svg#nav-arrow-right"></use>
-                                </svg>
-                            </a>
-                            <ul class="dropdown">
-                                <li class="dropdown__item">
-                                    <a href="#" class="dropdown__link">
-                                        Universal
-                                    </a>
-                                </li>
-                                <li class="dropdown__item">
-                                    <a href="#" class="dropdown__link">
-                                        For Ficus
-                                    </a>
-                                </li>
-                                <li class="dropdown__item">
-                                    <a href="#" class="dropdown__link">
-                                        For Cacti
-                                    </a>
-                                </li>
-                                <li class="dropdown__item">
-                                    <a href="#" class="dropdown__link">
-                                        For Citrus
-                                    </a>
-                                </li>
-                                <li class="dropdown__item">
-                                    <a href="#" class="dropdown__link">
-                                        For those in bloom
-                                    </a>
-                                </li>
-                                <li class="dropdown__item">
-                                    <a href="#" class="dropdown__link">
-                                        For Orchids
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li class="navigation__list__item">
-                    <a class="navigation__list__link" href="#">Blogs</a>
+
+                <li class="header__action-item">
+                    <a href="registration.html" target="_blank" class="login__btn header__action-link">
+                        <svg class="login__btn-img">
+                            <use href="./images/icon-sprite.svg#login-icon"></use>
+                        </svg>
+                        Login
+                    </a>
                 </li>
             </ul>
-        </nav>
 
-        <ul class="header__action">
-            <li class="header__action-item">
-                <a href="#" class="header__action-link">
-                    <svg>
-                        <use href="./images/product-card-sprite.svg#action-card-magnifier"></use>
-                    </svg>
-                </a>
-            </li>
-            <li class="header__action-item">
-                <a href="#" class="header__action-link">
-                    <svg>
-                        <use href="./images/product-card-sprite.svg#action-card-shopping-card"></use>
-                    </svg>
-                    <span class="header__cart-count">16</span>
-                </a>
-            </li>
+        </div>
 
-            <li class="header__action-item">
-                <a href="registration.html" target="_blank" class="login__btn header__action-link">
-                    <svg class="login__btn-img">
-                        <use href="./images/icon-sprite.svg#login-icon"></use>
-                    </svg>
-                    Login
-                </a>
-            </li>
-        </ul>
-
-        <svg class="burger-menu">
-            <use href="./images/icon-sprite.svg#burger-menu"></use>
-        </svg>
+        <div class="menu-btn">
+            <div class="line line--1"></div>
+            <div class="line line--2"></div>
+            <div class="line line--3"></div>
+        </div>
     </div>
 </header>
 
@@ -181,78 +187,104 @@
 
             <section class="search-section">
                 <div class="search-section__filter">
-                    <div class="search-section__filter-category">
-                        <h4 class="search-section__title">Categories</h4>
-                        <ul class="category__list">
-                            <li class="category__item">
-                                <a href="#" class="category__link">House Plants</a>
-                                <span class="category__item__counter">(33)</span>
-                            </li>
-                            <li class="category__item">
-                                <a href="#" class="category__link">Potter Plants</a>
-                                <span class="category__item__counter">(12)</span>
-                            </li>
-                            <li class="category__item">
-                                <a href="#" class="category__link">Seeds</a>
-                                <span class="category__item__counter">(65)</span>
-                            </li>
-                            <li class="category__item">
-                                <a href="#" class="category__link">Small Plants</a>
-                                <span class="category__item__counter">(39)</span>
-                            </li>
-                            <li class="category__item">
-                                <a href="#" class="category__link">Big Plants</a>
-                                <span class="category__item__counter">(23)</span>
-                            </li>
-                            <li class="category__item">
-                                <a href="#" class="category__link">Succulents</a>
-                                <span class="category__item__counter">(17)</span>
-                            </li>
-                            <li class="category__item">
-                                <a href="#" class="category__link">Trerrariums</a>
-                                <span class="category__item__counter">(19)</span>
-                            </li>
-                            <li class="category__item">
-                                <a href="#" class="category__link">Gardening</a>
-                                <span class="category__item__counter">(13)</span>
-                            </li>
-                            <li class="category__item">
-                                <a href="#" class="category__link">Accessories</a>
-                                <span class="category__item__counter">(18)</span>
-                            </li>
-                        </ul>
+                    <div class="dropdown">
+                        <div class="search-section__filter__header">
+                            <h4 class="search-section__title">Categories</h4>
+                            <svg class="search-section__filter__arrow">
+                                <use href="./images/icon-sprite.svg#arrow-down"></use>
+                            </svg>
+                        </div>
+                        <div class="dropdown__content">
+                            <ul class="category__list">
+                                <li class="category__item">
+                                    <a href="#" class="category__link">House Plants</a>
+                                    <span class="category__item__counter">(33)</span>
+                                </li>
+                                <li class="category__item">
+                                    <a href="#" class="category__link">Potter Plants</a>
+                                    <span class="category__item__counter">(12)</span>
+                                </li>
+                                <li class="category__item">
+                                    <a href="#" class="category__link">Seeds</a>
+                                    <span class="category__item__counter">(65)</span>
+                                </li>
+                                <li class="category__item">
+                                    <a href="#" class="category__link">Small Plants</a>
+                                    <span class="category__item__counter">(39)</span>
+                                </li>
+                                <li class="category__item">
+                                    <a href="#" class="category__link">Big Plants</a>
+                                    <span class="category__item__counter">(23)</span>
+                                </li>
+                                <li class="category__item">
+                                    <a href="#" class="category__link">Succulents</a>
+                                    <span class="category__item__counter">(17)</span>
+                                </li>
+                                <li class="category__item">
+                                    <a href="#" class="category__link">Trerrariums</a>
+                                    <span class="category__item__counter">(19)</span>
+                                </li>
+                                <li class="category__item">
+                                    <a href="#" class="category__link">Gardening</a>
+                                    <span class="category__item__counter">(13)</span>
+                                </li>
+                                <li class="category__item">
+                                    <a href="#" class="category__link">Accessories</a>
+                                    <span class="category__item__counter">(18)</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
 
-                    <div class="search-section__filter-price">
+                    <div class="dropdown">
+                        <div class="search-section__filter__header">
+                            <h4 class="search-section__title search-section__price-title">Price Range</h4>
+                            <svg class="search-section__filter__arrow">
+                                <use href="./images/icon-sprite.svg#arrow-down"></use>
+                            </svg>
+                        </div>
+                        <div class="dropdown__content">
+                            <div class="search-section__filter-price">
 
-                        <h4 class="search-section__title search-section__price-title">Price Range</h4>
-                        <form class="slider-range__form" method="post">
-                            <div id="slider-range"></div>
-                            <p class="slider-range__input__wrapper">
-                                <label for="amount">Price:</label>
-                                <input type="text" id="amount">
-                            </p>
-                            <button type="submit" class="slider-range__form__btn">Filter</button>
-                        </form>
+                                <form class="slider-range__form" method="post">
+                                    <div id="slider-range"></div>
+                                    <p class="slider-range__input__wrapper">
+                                        <label for="amount">Price:</label>
+                                        <input type="text" id="amount">
+                                    </p>
+                                    <button type="submit" class="slider-range__form__btn">Filter</button>
+                                </form>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="search-section__filter-size">
+                    <div class="dropdown">
+                        <div class="search-section__filter__header">
+                            <h4 class="search-section__title">Size</h4>
+                            <svg class="search-section__filter__arrow">
+                                <use href="./images/icon-sprite.svg#arrow-down"></use>
+                            </svg>
+                        </div>
 
-                        <h4 class="search-section__title">Size</h4>
-                        <ul class="category__list">
-                            <li class="category__item">
-                                <a href="#" class="category__link">Small</a>
-                                <span class="category__item__counter">(119)</span>
-                            </li>
-                            <li class="category__item">
-                                <a href="#" class="category__link">Medium</a>
-                                <span class="category__item__counter">(86)</span>
-                            </li>
-                            <li class="category__item">
-                                <a href="#" class="category__link">Large</a>
-                                <span class="category__item__counter">(78)</span>
-                            </li>
-                        </ul>
+                        <div class="dropdown__content">
+                            <div class="search-section__filter-size">
+
+                                <ul class="category__list">
+                                    <li class="category__item">
+                                        <a href="#" class="category__link">Small</a>
+                                        <span class="category__item__counter">(119)</span>
+                                    </li>
+                                    <li class="category__item">
+                                        <a href="#" class="category__link">Medium</a>
+                                        <span class="category__item__counter">(86)</span>
+                                    </li>
+                                    <li class="category__item">
+                                        <a href="#" class="category__link">Large</a>
+                                        <span class="category__item__counter">(78)</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="search-section__sale-banner">
@@ -938,8 +970,9 @@
 </main>
 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
         crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
 <script src="js/owl.carousel.js"></script>
+<script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
 <script src="js/scripts.js"></script>
 
 <script src="js/main.js"></script>
